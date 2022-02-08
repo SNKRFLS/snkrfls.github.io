@@ -12,6 +12,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script src="./assets/js/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <body>
@@ -21,7 +23,7 @@
 	<header id="header-container">
 
 
-				<div id="header-main-menu"> <!-- HEADER RESPONSIVE MENU START -->
+				<div id="header-main-menu" style="display: none"> <!-- HEADER RESPONSIVE MENU START -->
 
 				<div id="header-main-menu-inner">
 
@@ -69,7 +71,7 @@
 			<div id="logo-hamburger">
 				<img class="brand-logo"  src="./assets/images/dnmr_logo_id.png" alt="brand" height="60px">
 
-				<a id="toggler-element" href="Javascript:showMenu();" ><span><i class="fa fa-bars"></i></span></a>
+				<a id="toggler-element" href="#" onclick="showMenu();"><span><i class="fa fa-bars" id="hamburger"></i></span></a>
 			</div>
 
 
@@ -103,7 +105,13 @@
 
 		function showMenu() {
 			
-			$("header-main-menu").click(function {
+			$("#toggler-element").click(function() {
+		
+				$('#header-main-menu').show('slow', function() {
+					$("#hamburger").removeClass('fa fa-bars').addClass('fa fa-close');
+				});
+
+			})
 		
 
 		}
