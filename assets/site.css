@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'hyperegular';
+    src: url('../assets/fonts/HYPERv14-Black.woff2') format('woff2'), 
+        url('../assets/fonts/HYPERv14-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hyperstrong';
+    src: url('../assets/fonts/HYPERv14-Strong.woff2') format('woff2'),
+        url('../assets/fonts/HYPERv14-Strong.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hyperlight';
+    src: url('../assets/fonts/HYPERv14-Light.woff2') format('woff2'),
+        url('../assets/fonts/HYPERv14-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: unset;
+}
+
+/* header start*/   
+
+.site-header-container {
+    width: 100%;
+    height: 100%;
+}
+ 
+        #site-header-inner { /* margintkellrakniide */
+            width: 100%;
+            height: 100%;
+        }
+
+    /* header brand start */
+
+
+    #header-wrapper {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+    }
+    
+        #header-brand {
+            width: 384px;
+            height: 131px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+            #header-brand-inner {
+                display: flex;
+                flex-direction: column;
+            }
+
+                #brand-text-dmr {
+
+                }
+
+                    #brand-text {
+                        font-family: 'hyperegular';
+                    }
+
+                #brand-logo-dmr-svg {
+
+                }
+
+    /* header brand end */
+ 
+
+/* header sectiobn start */   
+
+#site-header {
+
+}
+
+    #site-header-inner {
+
+    }
+
+        .header-link-items {
+            display: flex;
+            align-items: center;
+            padding-right: 40px;
+        }
+         
+            .header-links {
+                padding: 0px 20px 0px 20px;
+                font-family: 'Segoe UI';
+                font-weight: lighter;
+            }
+
+            .header-links:hover{
+                border-bottom: 5px solid #FF926D;
+            }
+
+            .active {
+                font-weight: bold;
+                border-bottom: 5px solid #FF926D;
+                transition: 3ms;
+            }
+
+        #headerLangSelector {
+            display: flex;
+            border: 2px solid #B9B9B9;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 150px;
+        }
+
+        #headerLangSelector > button {
+            display: flex;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            font-family: 'Segoe UI';
+            font-size: 18px;
+            color: #B9B9B9;
+        }
+
+            #selector-sep {
+                background-color: #B9B9B9;
+                width: 2px;
+                height: 30px;
+                display: flex;
+                margin: 0px 22px 0px 22px;
+            }
+
+        #header-mobile-menu {
+        }
+
+            #dropDownButton {
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: white;
+                background-color: transparent;
+                padding: 0;
+                margin: 0;
+
+            }
+        
+
+/* header section start */   
+
+.d-flex {
+    display: flex;
+}
+
+#header-content-section {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: 150% 30%;
+    display: flex;
+}
+
+    #section-inner {
+        display: flex;
+        align-items: center;
+    }
+
+        #section-title-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+            .section-title-container-content {
+                padding-left: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #siteMainTitle {
+                font-family: 'Segoe UI';
+                font-weight: bold;
+                font-size: 70px;
+                color: white;
+                width: 1000px;    
+                margin: 25px 0px 25px 0px;
+            }
+            
+            #siteQuoteSubText {
+                font-family: 'Segoe UI';
+                font-style: italic;
+                font-size: 20px;
+                color: white;
+                text-transform: uppercase;
+                width: 450px;
+                margin: 25px 0px 25px 0px;
+            }
+
+            #aboutUSButton {
+                font-family: 'hyperegular';
+                font-weight: normal;
+                font-size: 16px;
+                outline: none;
+                cursor: pointer;
+                background-color: transparent;
+                border: 2px solid #FF926D;
+                color: #FF926D;
+                border-radius: 50px;
+                padding: 15px 40px 15px 40px;
+                letter-spacing: 1px;
+                margin: 25px 0px 25px 0px;
+                display: flex;
+            }
+
+            #aboutUSButton:hover { 
+                background-color: #FF926D;
+                color: black;
+                -moz-transition: all 350ms linear;
+                -webkit-transition: all 350ms linear;
+                -o-transition: all 350ms linear;
+                transition: all 350ms linear;
+            }  
+
+
+        #main_company_name { /* DYNAMIC SOLUTIONS (C) 2022 */
+
+        }
+/* header section end*/   
+
+
+
+/* 1174px-nél vált "mobile" responsive-ra */
+
+
+@media screen and (max-width: 1150px) { /* nagyobb */
+
+    #header-mobile-menu {
+        display: block;
+    }
+
+    
+    .header-links, #headerLangSelector {
+        display: none;
+    }
+}
+    
+
+  
+  @media screen and (min-width: 1150px) { /* kissebb */
+
+    #header-mobile-menu {
+        display: none;
+    }
+  }
