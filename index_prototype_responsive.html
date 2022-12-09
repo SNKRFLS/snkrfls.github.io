@@ -5,317 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="./assets/site.css"> 
 
-    <!-- JAVASCRIPTS START -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./js/dynamic.js"></script>
 
-    <!-- JAVASCRIPTS END-->
-
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/sharp-solid.css">
-
-    <title>Dynamic Solutions</title>
+    <title>Dynamic Rage Studio</title>
 </head>
 <body>
-    
-    <div id="header-wrapper">
-        <header class="header">
 
-                <div class="header-in">
-
-                    <div id="header-brand-text">
-
-                        <span id="logo-text-span" class="norm">dynamic solutions</span>
-
-                        <span id="logo-text-span" class="resp">dms</span>
-
-                    </div>
+	<div class="site-header-container">
+   		
+   		<div id="site-header-inner"> <!-- kell margin ami left-right behatárolja kb 20-30px -es -->
+        
 
 
-                    <div class="header-links">
+        <div id="header-wrapper">
+            <div id="header-brand">
 
-                        <a href="#" class="header-items">Home</a>
-                        <a href="#" class="header-items">About us</a>
-                        <a href="#" class="header-items">Services</a>
-                        <a href="#" class="header-items">Contact</a>
+                
+                <img src="./assets/images/dms_studio.png" alt="Dynamic Solution Brand Image" title="Dynamic Solution">
 
 
-                        <div class="language-selector display-flex align-items-center">
-                    
+            </div>
+
+            <!-- header start -->
+
+            <header id="site-header">
+
+                <div id="site-header-inner">
+
+                    <div class="header-link-items">
+
+                        <a href="#" class="header-links active">Home</a>
+                        <a href="#" class="header-links">About Us</a>
+                        <a href="#" class="header-links">What do we do?</a>
+                        <a href="#" class="header-links">Software We Use</a>
+                        <a href="#" class="header-links">News</a>
+                        <a href="#" class="header-links">Contact</a>
+
+
+                        <div id="headerLangSelector">
+
                             <button id="english">EN</button>
-                            <div id="lang-sep"></div>
-                            <button id="hungarian">US</button>
 
+                            <div id="selector-sep"></div>
+
+                            <button id="hungarian">HU</button>
+
+                        </div>
+
+                        <div id="header-mobile-menu" class="d-flex">
+                            <button id="dropDownButton"><svg class="gb_0e" width="50px" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></button>
                         </div>
 
                     </div>
 
-                    <div id="dropdown-button">
-                            
-                        <a href="#" id="dropdown-menu"><svg class="gb_Ve" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
-                        </a>
-
-                    </div>
-     
-
                 </div>
-        </header>
+
+            </header>
+
+            </div>
 
 
+            <!-- header end -->
 
-        <section id="header-section">
-            
-            <div id="header-section-wrapper">
-                <div id="section-content">
 
-                    <div id="site-main-title-wrapper">
+            <section id="header-content-section">
+
+                <div id="section-inner">
+
+
+                    <div id="section-title-container">
+
+                    	<div class="section-title-container-content">
+                        	<h1 id="siteMainTitle">LOREM IPSUM DOLOR SIT AMET AITCH.</h1>
+                        	<p id="siteQuoteSubText">” All life is a game, for those who play it. Drama for those who don't. „</p>
                         
-                        <div id="site-main-title-content">
+                        	<button id="aboutUSButton">about us</button>
 
-                            <h1 id="main-title">MŰKÖDŐ MEGOLDÁSOKAT<br>KÉSZÍTÜNK!</h1>
-
-                            <div id="sub-text-wrapper">
-                                <span id="title-subtext">
-
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptate numquam reiciendis est accusantium quo, assumenda quae odio odit expedita consequuntur!
-                                </span>
-                            </div>
-
+                        	<span id="main_company_name">dynamic solutions</span>
                         </div>
-
-                        <div id="section-actions-container">
-
-                            <button id="about-us-button">ABOUT US</button>
-
-                        </div>
-
-                        <div id="line-sep" style="width: 1px; height: 110px; display: flex; "></div>
-
-
-
                     </div>
 
 
-
                 </div>
-
-                
-            <div id="header-media-line-wrapper">
-
-                <div id="line-sep" style="width: 1px; height: 400px;"></div>
-                
-                <div id="meida-line-text-container"><span id="line-text">ELÉRHETŐSÉGEINK</span></div>
-
-                <div id="media-buttons-container">
-
-                    <button id="instagram" class="media-buttons-item"><i class="fa-brands fa-instagram"></i></button>
-                    <button id="facebook" class="media-buttons-item"><i class="fa-brands fa-facebook-f"></i></button>
-                    <button id="something" class="media-buttons-item"><i class="fa-duotone fa-circle-question"></i></button>
-
-                </div>
-
-                <div id="line-sep" style="width: 1px; height: 50px;"></div>
-
-
-            </div>
-
-            </div>
-
-        </section>
-
-    </div>
-
-
-    <main id="site-main">
         
-        <div id="site-content">
-
-
-            <section class="about-us-section">
-
-                <div id="section-content">
-
-                    <div id="abs-content-wrapper">
-
-                        <div id="abs-wrapper-content">    
-                            
-                            <div id="abs-title-container">
-                                <div id="title-sep"></div> 
-                                <span id="section-title">About us</span>
-                            </div>
-
-                            <div id="abs-content-container">
-                            
-                                <div id="abs-image-container"></div>
-                                
-                                <div id="abs-description-container">
-
-                                    <div id="abs-desc-bottom-info">
-
-                                        <div id="current-date-left">
-                                            
-                                            <div id="bottom-text">Elégedett ügyfeleink:</div>
-                                            <span id="current-date-number">750+</span>
-
-                                        </div>
-
-                                        <div id="current-date-right">
-                                            
-                                            <div id="bottom-text">Pozitív visszajezés:</div>
-                                            <span id="current-date-number">80+</span>
-
-                                        </div>
-
-                                    </div>
-                                   
-                                    <div id="abs-desc-des-text-container">
-
-                                        <div id="abs-desc-left-text">
-                                            
-                                            <span id="desc-text" class="text-bold">Eddigi ügyfeleink pozitív visszajelzésekkel távoztak.</span>
-
-                                            <div id="info-01">
-
-                                                <span id="desc-text" class="text-rgb">Lorem ipsum dolor:</span>
-                                                <span id="desc-text" class="text-bold">Lorem ipsum dolor.</span>
-
-                                            </div>
-
-                                            <div id="info-02">
-
-                                                <span id="desc-text" class="text-rgb">Lorem ipsum dolor:</span>
-                                                <span id="desc-text" class="text-bold">Lorem ipsum dolor.</span>
-
-                                            </div>
-
-
-                                        </div>
-
-                                        <div id="abs-desc-right-text">
-                                            <p id="desc-text">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat incidunt reiciendis soluta dolor, ipsam alias eius ad beatae perspiciatis minus dignissimos ex sunt voluptatem, natus aut amet quod reprehenderit blanditiis.
-                                            </p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    
-                        
-                    </div>
-
-                </div>
 
             </section>
 
-
-            <section class="mobile-section">
-
-                <div id="section-in">
-
-
-                    <div id="section-header-nav-wrapper">
-
-                        <div id="nav-sep"></div>
-
-                        <div id="section-header-nav-container">
-
-                            <div id="secton-header-nav-content">
-
-                                <div class="section-header-links" id="section-header-links">
-
-                                    <a href="#" class="sc-header-items active">CÉGÜNK<br>TÖRTÉNETE</a>
-                                    <a href="#" class="sc-header-items">KAPCSOLAT<br>ELÉRHETŐSÉG</a>
-                                    <a href="#" class="sc-header-items">LOREM IPSUM<br>DOLOR SIT AMET</a>
-                                    <a href="#" class="sc-header-items">LOREM IPSUM<br>DOLOR SIT AMET</a>
-                                    <a href="#" class="sc-header-items">LOREM IPSUM<br>DOLOR SIT AMET</a>
-                                    <a href="#" class="sc-header-items">LOREM IPSUM<br>DOLOR SIT AMET</a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                
-
-                    </div>
-
-                    <div id="section-aboutus-mob"></div>
-                    <div id="section-contactus-mob"></div>
-                    <div id="section-someting-mob"></div>
-
-
-                </div>
-                
-            </section>
-        
-        </div>
-    </main>
-
-    <div id="dms-footer">
-
-        <div id="dms-footer-inner-content">
-
-            <div id="footer-company-names">
-                
-                <span id="footer-title" class="font-aremat">dynamic solutions</span>
-                <span id="footer-title" class="font-hyper">dynamic rage studio</span>
-
-            </div>
-
-            <div id="footer-sep"></div>
-
-            <div id="dms-footer-info-container">
-
-                <button id="dropbtn">
-                  <span id="drop-text">Céginformációk</span>
-                  <i class="fa fa-caret-down"></i>
-                </button>
-
-                <div id="dms-footer-dropdown-content-wrapper" style="display: none;">
-                    <div id="dms-footer-dropdown-content">
-                        <a href="#" class="footer-dropdown-items">Impresszum</a>
-                        <a href="#" class="footer-dropdown-items">ÁSZF</a>
-                        <a href="#" class="footer-dropdown-items">Adatvédelmi Tájékoztató</a>
-                    </div>
-                </div>
-
-            </div> 
-
-            <div id="footer-media-actions-container">
-
-                <a href="#" id="facebook" class="footer-action-items"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#" id="instagram" class="footer-action-items"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" id="something" class="footer-action-items"><i class="fa-solid fa-square-question"></i></a>
-                <a href="#" id="something" class="footer-action-items"><i class="fa-solid fa-square-question"></i></a>
-
-            </div>
-        
-
-
         </div>
 
-        <div id="footer-bottom-container">
+   	</div>
 
-            <span id="footer-text">Copyright &copy 2022 Dynamic Solutions. Zrt</span>
-
-        </div>
-
-
-
-    </div>
-
-    <script>
     
-        
-    </script>
 
 </body>
 </html>
